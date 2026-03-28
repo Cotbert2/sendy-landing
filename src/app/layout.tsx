@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Sendy – Instant File Sharing",
   description:
     "Share files instantly between devices on the same network. No cloud, no accounts, no limits.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
