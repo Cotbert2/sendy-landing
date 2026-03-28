@@ -5,16 +5,17 @@ import { dictionaries, type Locale } from "@/i18n";
 import {
   WindowsIcon,
   PlayStoreIcon,
+  AppleIcon,
   GitHubIcon,
   CoffeeIcon,
-  SendIcon,
   featureIcons,
 } from "@/components/Icons";
 
 const LINKS = {
   playStore: "https://play.google.com/store/apps/details?id=com.example.sendy",
   windows: "#", // TODO: replace with actual Windows download link
-  github: "https://github.com/cotbert/sendy",
+  macos: "#", // TODO: replace with actual macOS download link
+  github: "https://github.com/Cotbert2/sendy",
   coffee: "https://buymeacoffee.com/cotbert",
 };
 
@@ -42,10 +43,7 @@ export default function Landing() {
 
       {/* Hero */}
       <section className="hero">
-        <div className="hero__logo">
-          <SendIcon />
-        </div>
-        <h1 className="hero__title">{t.hero.title}</h1>
+        <img src="/logo.png" alt="Sendy" className="hero__logo-img" />
         <p className="hero__subtitle">{t.hero.subtitle}</p>
         <div className="hero__buttons">
           <a
@@ -65,6 +63,15 @@ export default function Landing() {
           >
             <WindowsIcon />
             {t.hero.windows}
+          </a>
+          <a
+            href={LINKS.macos}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--outline"
+          >
+            <AppleIcon />
+            {t.hero.macos}
           </a>
         </div>
       </section>
@@ -128,6 +135,15 @@ export default function Landing() {
           >
             <WindowsIcon />
             {t.cta.windows}
+          </a>
+          <a
+            href={LINKS.macos}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--outline"
+          >
+            <AppleIcon />
+            {t.cta.macos}
           </a>
         </div>
       </section>

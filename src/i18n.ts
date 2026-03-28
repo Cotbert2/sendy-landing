@@ -6,11 +6,12 @@ export const dictionaries = {
         "Share files instantly between devices on the same network. No cloud, no accounts, no limits.",
     },
     hero: {
-      title: "Sendy",
+      title: "",
       subtitle:
         "Share files instantly between devices on the same network. No cloud. No accounts. Just send.",
       playStore: "Google Play",
       windows: "Windows",
+      macos: "macOS",
     },
     features: {
       heading: "Why Sendy?",
@@ -69,6 +70,7 @@ export const dictionaries = {
       subtitle: "Free. Open source. No strings attached.",
       playStore: "Get on Google Play",
       windows: "Download for Windows",
+      macos: "Download for macOS",
     },
     footer: {
       github: "GitHub",
@@ -88,6 +90,7 @@ export const dictionaries = {
         "Comparte archivos al instante entre dispositivos en la misma red. Sin nube. Sin cuentas. Solo envía.",
       playStore: "Google Play",
       windows: "Windows",
+      macos: "macOS",
     },
     features: {
       heading: "¿Por qué Sendy?",
@@ -146,6 +149,7 @@ export const dictionaries = {
       subtitle: "Gratis. Código abierto. Sin compromisos.",
       playStore: "Descargar en Google Play",
       windows: "Descargar para Windows",
+      macos: "Descargar para macOS",
     },
     footer: {
       github: "GitHub",
